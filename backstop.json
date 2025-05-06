@@ -1,0 +1,30 @@
+{
+  "id": "angular-ui-tests",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "page First",
+      "url": "http://localhost:4200/page-one",
+      "selectors": ["#app-page-one"]
+    },
+    {
+      "label": "page Second",
+      "url": "http://localhost:4200/page-two",
+      "selectors": ["#app-page-two"]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "puppeteer",
+  "report": ["browser"]
+}

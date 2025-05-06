@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "reference-and-zip": "npx backstop reference && zip -r reference.zip backstop_data/bitmaps_reference/ && mv reference.zip ~/Downloads/"
+
   },
   "private": true,
   "dependencies": {
@@ -26,6 +28,7 @@
     "@angular/cli": "^19.2.10",
     "@angular/compiler-cli": "^19.2.0",
     "@types/jasmine": "~5.1.0",
+    "backstopjs": "^6.3.25",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
